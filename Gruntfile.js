@@ -104,6 +104,7 @@ module.exports = function(grunt) {
         files: [
           {expand:true, cwd: 'doc/assets/', src: ['**/*','!{scss,js}/**/*'], dest: 'dist/docs/assets/', filter:'isFile'},
           {expand:true, cwd: 'js/', src: ['foundation/*.js'], dest: 'dist/assets/js', filter: 'isFile'},
+          {expand:true, cwd: 'fonts/', src: ['*'], dest: 'dist/assets/fonts', filter: 'isFile'},
           {src: 'bower_components/jquery/jquery.min.js', dest: 'dist/docs/assets/js/jquery.js'},
           {expand:true, cwd: 'scss/', src: '**/*.scss', dest: 'dist/assets/scss/', filter: 'isFile'},
           {src: 'bower.json', dest: 'dist/assets/'}
